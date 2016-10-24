@@ -12,9 +12,11 @@
  *
  *	 Please submit all problems or questions to the Help Forum on my Google Code project page:
  *	 http://code.google.com/p/phpflickr/issues/list
+ *
+ *
  * 
- *   Authentification Oauth added by DantSu
- *   http://www.asociaux.fr - http://www.dantsu.com
+ *   Authentification Oauth added by DantSu - Alary Franck
+ *   http://www.developpeur-web.dantsu.com/
  *
  */ 
 if ( !class_exists('phpFlickr') ) {
