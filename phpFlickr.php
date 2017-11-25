@@ -242,7 +242,7 @@ if ( !class_exists('phpFlickr') ) {
             if(!isset($response['oauth_callback_confirmed']) || $response['oauth_callback_confirmed'] != 'true')
             {
                 $this->error_code = 'Oauth';
-                $this->error_msg = display_array($response);
+                $this->error_msg = var_export($response, true);
                 return false;
             }
 
@@ -290,7 +290,7 @@ if ( !class_exists('phpFlickr') ) {
             if(isset($response['oauth_problem']) && $response['oauth_problem'] != '')
             {
                 $this->error_code = 'Oauth';
-                $this->error_msg = display_array($response);
+                $this->error_msg = var_export($response, true);
                 return false;
             }
 
